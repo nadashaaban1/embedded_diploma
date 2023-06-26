@@ -1,0 +1,7 @@
+00:30:45 **** Incremental Build of configuration Debug for project string_all ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\string_all.o" "..\\src\\string_all.c" 
+gcc -o string_all.exe "src\\string_all.o" 
+
+00:30:46 Build Finished (took 1s.196ms)
+
