@@ -1,0 +1,19 @@
+/*
+ ============================================================================
+ Name        : sum_to99.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main()
+{
+	int i;
+	for(i=1; i<100; i++);
+	printf("summation of values between (1 and 99) is : %d",i);
+
+}

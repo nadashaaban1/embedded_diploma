@@ -1,0 +1,7 @@
+04:36:04 **** Incremental Build of configuration Debug for project comparing_2numbers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\comparing_2numbers.o" "..\\src\\comparing_2numbers.c" 
+gcc -o comparing_2numbers.exe "src\\comparing_2numbers.o" 
+
+04:36:05 Build Finished (took 1s.66ms)
+

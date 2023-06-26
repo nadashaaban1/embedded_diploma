@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+ Name        : HW1_3.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main()
+{
+	int a,b;
+	printf("Enter two integers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d""%d",&a,&b);
+	printf("Sum: %d",a+b);
+
+}
