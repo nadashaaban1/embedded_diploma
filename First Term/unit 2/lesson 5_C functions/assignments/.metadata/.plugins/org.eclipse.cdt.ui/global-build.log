@@ -1,0 +1,41 @@
+Info: Nothing to build for HW4_1
+22:13:42 **** Incremental Build of configuration Debug for project HW4_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HW4_1.o" "..\\src\\HW4_1.c" 
+..\src\HW4_1.c: In function 'calcPrime':
+..\src\HW4_1.c:14:6: warning: variable 'primes' set but not used [-Wunused-but-set-variable]
+  int primes[100],k=0;
+      ^~~~~~
+..\src\HW4_1.c: At top level:
+..\src\HW4_1.c:32:9: error: expected declaration specifiers or '...' before string constant
+  printf("%d \n",k);
+         ^~~~~~~
+..\src\HW4_1.c:32:17: error: unknown type name 'k'
+  printf("%d \n",k);
+                 ^
+..\src\HW4_1.c:33:2: error: expected identifier or '(' before 'for'
+  for(int i=0;i<k;i++)
+  ^~~
+..\src\HW4_1.c:33:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+  for(int i=0;i<k;i++)
+               ^
+..\src\HW4_1.c:33:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+  for(int i=0;i<k;i++)
+                   ^~
+..\src\HW4_1.c:35:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:14:49 **** Incremental Build of configuration Debug for project HW4_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HW4_1.o" "..\\src\\HW4_1.c" 
+gcc -o HW4_1.exe "src\\HW4_1.o" 
+Info: Nothing to build for HW4_1
+Info: Nothing to build for HW4_1
+Info: Nothing to build for HW4_1
+Info: Nothing to build for HW4_2
+Info: Nothing to build for HW4_3
+Info: Nothing to build for HW4_4
+22:15:30 **** Incremental Build of configuration Debug for project HW4_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HW4_1.o" "..\\src\\HW4_1.c" 
+gcc -o HW4_1.exe "src\\HW4_1.o" 
