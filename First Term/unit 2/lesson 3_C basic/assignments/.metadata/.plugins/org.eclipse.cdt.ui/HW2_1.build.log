@@ -1,7 +1,0 @@
-07:35:55 **** Incremental Build of configuration Debug for project HW2_1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HW2_1.o" "..\\src\\HW2_1.c" 
-gcc -o HW2_1.exe "src\\HW2_1.o" 
-
-07:35:56 Build Finished (took 400ms)
-

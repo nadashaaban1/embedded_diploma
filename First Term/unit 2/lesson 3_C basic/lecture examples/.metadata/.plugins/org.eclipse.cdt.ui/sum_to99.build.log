@@ -1,7 +1,0 @@
-04:54:50 **** Incremental Build of configuration Debug for project sum_to99 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sum_to99.o" "..\\src\\sum_to99.c" 
-gcc -o sum_to99.exe "src\\sum_to99.o" 
-
-04:54:50 Build Finished (took 394ms)
-

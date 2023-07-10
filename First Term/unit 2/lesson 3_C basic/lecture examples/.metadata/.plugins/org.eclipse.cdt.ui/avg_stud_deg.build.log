@@ -1,7 +1,0 @@
-05:09:56 **** Incremental Build of configuration Debug for project avg_stud_deg ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\avg_stud_deg.o" "..\\src\\avg_stud_deg.c" 
-gcc -o avg_stud_deg.exe "src\\avg_stud_deg.o" 
-
-05:09:56 Build Finished (took 398ms)
-
