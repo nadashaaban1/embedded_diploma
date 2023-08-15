@@ -56,21 +56,23 @@ Linker script and memory map
 .igot.plt       0x20000004        0x0 load address 0x08000188
  .igot.plt      0x00000000        0x0 main.o
 
-.bss            0x20000004        0x0 load address 0x08000188
+.bss            0x20000004     0x1000 load address 0x08000188
                 0x20000004                _S_bss = .
  *(.bss*)
  .bss           0x20000004        0x0 main.o
  .bss           0x20000004        0x0 startup.o
                 0x20000004                _E_bss = .
                 0x20000004                . = ALIGN (0x4)
-                0x20000004                stack_top = .
+                0x20001004                . = (. + 0x1000)
+ *fill*         0x20000004     0x1000 
+                0x20001004                stack_top = .
 LOAD main.o
 LOAD startup.o
 OUTPUT(lab2.elf elf32-littlearm)
 
-.debug_info     0x00000000      0x26e
+.debug_info     0x00000000      0x25a
  .debug_info    0x00000000       0xf3 main.o
- .debug_info    0x000000f3      0x17b startup.o
+ .debug_info    0x000000f3      0x167 startup.o
 
 .debug_abbrev   0x00000000      0x155
  .debug_abbrev  0x00000000       0x95 main.o

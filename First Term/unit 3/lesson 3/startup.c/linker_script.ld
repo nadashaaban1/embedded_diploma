@@ -25,6 +25,7 @@ SECTIONS
 	*(.bss*)
 	_E_bss = . ;
 	. = ALIGN(4) ;
+	. = . + 0x1000 ;
 	stack_top = . ;
 	} > sram
 

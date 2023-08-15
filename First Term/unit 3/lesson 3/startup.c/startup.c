@@ -1,12 +1,12 @@
 #include <stdint.h>
 extern int main(void);
 
+void reset_handler();
 void default_handler()
 {
 	reset_handler();
 }
 
-void reset_handler();
 void NMI_handler() __attribute__((weak, alias ("default_handler")));
 void HFault_handler() __attribute__((weak, alias ("default_handler")));
 
