@@ -1,0 +1,286 @@
+
+lab3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000006c  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000001b8  2**0
+                  ALLOC, LOAD, DATA
+  2 .comment      0000002f  00000000  00000000  000001b8  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000040  00000000  00000000  000001e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000903  00000000  00000000  00000227  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 000005ab  00000000  00000000  00000b2a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   000002ae  00000000  00000000  000010d5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000b8  00000000  00000000  00001384  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000196  00000000  00000000  0000143c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000001da  00000000  00000000  000015d2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000030  00000000  00000000  000017ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .text         00000004  00000160  00000160  000001b4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000017dc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text.setup   0000001c  00000144  00000144  00000198  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .text.main    0000001e  00000126  00000126  0000017a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.__vector_1 0000003e  0000006c  0000006c  000000c0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.__vector_2 0000003e  000000aa  000000aa  000000fe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.__vector_3 0000003e  000000e8  000000e8  0000013c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 36 00 	jmp	0x6c	; 0x6c <_etext>
+   8:	0c 94 55 00 	jmp	0xaa	; 0xaa <__vector_2>
+   c:	0c 94 74 00 	jmp	0xe8	; 0xe8 <__vector_3>
+  10:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  14:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  18:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  1c:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  20:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  24:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  28:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  2c:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  30:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  34:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  38:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  3c:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  40:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  44:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  48:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  4c:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+  50:	0c 94 b0 00 	jmp	0x160	; 0x160 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 93 00 	call	0x126	; 0x126 <main>
+  64:	0c 94 34 00 	jmp	0x68	; 0x68 <_exit>
+
+00000068 <_exit>:
+  68:	f8 94       	cli
+
+0000006a <__stop_program>:
+  6a:	ff cf       	rjmp	.-2      	; 0x6a <__stop_program>
+
+Disassembly of section .text:
+
+00000160 <__bad_interrupt>:
+ 160:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.setup:
+
+00000144 <setup>:
+
+
+void setup(void)
+{
+	//enable bit 5&6&7 in GICR to enable external interrupt pin
+	GICR |= (7<<5);
+ 144:	8b b7       	in	r24, 0x3b	; 59
+ 146:	80 6e       	ori	r24, 0xE0	; 224
+ 148:	8b bf       	out	0x3b, r24	; 59
+
+	//enable bit 5&6&7 in GIFR && GICR >> ISR is called
+	GIFR |= (7<<5);
+ 14a:	8a b7       	in	r24, 0x3a	; 58
+ 14c:	80 6e       	ori	r24, 0xE0	; 224
+ 14e:	8a bf       	out	0x3a, r24	; 58
+
+	//set bit 7 in SREG for the interrupt to be enabled
+	//SREG |= (1<<7);
+	sei();
+ 150:	78 94       	sei
+	
+	//enable any logical change for INT0 & rising edge for INT1
+	MCUCR |= (1<<0);
+ 152:	85 b7       	in	r24, 0x35	; 53
+ 154:	81 60       	ori	r24, 0x01	; 1
+ 156:	85 bf       	out	0x35, r24	; 53
+	MCUCR |= (3<<2);
+ 158:	85 b7       	in	r24, 0x35	; 53
+ 15a:	8c 60       	ori	r24, 0x0C	; 12
+ 15c:	85 bf       	out	0x35, r24	; 53
+ 15e:	08 95       	ret
+
+Disassembly of section .text.main:
+
+00000126 <main>:
+	//falling edge for INT2 by default
+}
+
+int main(void)
+{
+	setup();
+ 126:	0e 94 a2 00 	call	0x144	; 0x144 <setup>
+	PORTD &= ~(1<<PD5);
+ 12a:	82 b3       	in	r24, 0x12	; 18
+ 12c:	8f 7d       	andi	r24, 0xDF	; 223
+ 12e:	82 bb       	out	0x12, r24	; 18
+	PORTD &= ~(1<<PD6);
+ 130:	82 b3       	in	r24, 0x12	; 18
+ 132:	8f 7b       	andi	r24, 0xBF	; 191
+ 134:	82 bb       	out	0x12, r24	; 18
+	PORTD &= ~(1<<PD7);
+ 136:	82 b3       	in	r24, 0x12	; 18
+ 138:	8f 77       	andi	r24, 0x7F	; 127
+ 13a:	82 bb       	out	0x12, r24	; 18
+	DDRD |= (7<<5) ; 
+ 13c:	81 b3       	in	r24, 0x11	; 17
+ 13e:	80 6e       	ori	r24, 0xE0	; 224
+ 140:	81 bb       	out	0x11, r24	; 17
+ 142:	ff cf       	rjmp	.-2      	; 0x142 <main+0x1c>
+
+Disassembly of section .text.__vector_1:
+
+0000006c <__vector_1>:
+		
+	}
+}
+
+ISR(INT0_vect)
+{
+  6c:	1f 92       	push	r1
+  6e:	0f 92       	push	r0
+  70:	0f b6       	in	r0, 0x3f	; 63
+  72:	0f 92       	push	r0
+  74:	11 24       	eor	r1, r1
+  76:	2f 93       	push	r18
+  78:	8f 93       	push	r24
+  7a:	9f 93       	push	r25
+	PORTD |= (1<<PD5);
+  7c:	82 b3       	in	r24, 0x12	; 18
+  7e:	80 62       	ori	r24, 0x20	; 32
+  80:	82 bb       	out	0x12, r24	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  82:	2f ef       	ldi	r18, 0xFF	; 255
+  84:	80 e7       	ldi	r24, 0x70	; 112
+  86:	92 e0       	ldi	r25, 0x02	; 2
+  88:	21 50       	subi	r18, 0x01	; 1
+  8a:	80 40       	sbci	r24, 0x00	; 0
+  8c:	90 40       	sbci	r25, 0x00	; 0
+  8e:	e1 f7       	brne	.-8      	; 0x88 <__vector_1+0x1c>
+  90:	00 c0       	rjmp	.+0      	; 0x92 <__vector_1+0x26>
+  92:	00 00       	nop
+	_delay_ms(100);
+	PORTD &= ~(1<<PD5);
+  94:	82 b3       	in	r24, 0x12	; 18
+  96:	8f 7d       	andi	r24, 0xDF	; 223
+  98:	82 bb       	out	0x12, r24	; 18
+	
+}
+  9a:	9f 91       	pop	r25
+  9c:	8f 91       	pop	r24
+  9e:	2f 91       	pop	r18
+  a0:	0f 90       	pop	r0
+  a2:	0f be       	out	0x3f, r0	; 63
+  a4:	0f 90       	pop	r0
+  a6:	1f 90       	pop	r1
+  a8:	18 95       	reti
+
+Disassembly of section .text.__vector_2:
+
+000000aa <__vector_2>:
+
+ISR(INT1_vect)
+{
+  aa:	1f 92       	push	r1
+  ac:	0f 92       	push	r0
+  ae:	0f b6       	in	r0, 0x3f	; 63
+  b0:	0f 92       	push	r0
+  b2:	11 24       	eor	r1, r1
+  b4:	2f 93       	push	r18
+  b6:	8f 93       	push	r24
+  b8:	9f 93       	push	r25
+	PORTD |= (1<<PD6);
+  ba:	82 b3       	in	r24, 0x12	; 18
+  bc:	80 64       	ori	r24, 0x40	; 64
+  be:	82 bb       	out	0x12, r24	; 18
+  c0:	2f ef       	ldi	r18, 0xFF	; 255
+  c2:	80 e7       	ldi	r24, 0x70	; 112
+  c4:	92 e0       	ldi	r25, 0x02	; 2
+  c6:	21 50       	subi	r18, 0x01	; 1
+  c8:	80 40       	sbci	r24, 0x00	; 0
+  ca:	90 40       	sbci	r25, 0x00	; 0
+  cc:	e1 f7       	brne	.-8      	; 0xc6 <__vector_2+0x1c>
+  ce:	00 c0       	rjmp	.+0      	; 0xd0 <__vector_2+0x26>
+  d0:	00 00       	nop
+	_delay_ms(100);
+	PORTD &= ~(1<<PD6);
+  d2:	82 b3       	in	r24, 0x12	; 18
+  d4:	8f 7b       	andi	r24, 0xBF	; 191
+  d6:	82 bb       	out	0x12, r24	; 18
+	
+}
+  d8:	9f 91       	pop	r25
+  da:	8f 91       	pop	r24
+  dc:	2f 91       	pop	r18
+  de:	0f 90       	pop	r0
+  e0:	0f be       	out	0x3f, r0	; 63
+  e2:	0f 90       	pop	r0
+  e4:	1f 90       	pop	r1
+  e6:	18 95       	reti
+
+Disassembly of section .text.__vector_3:
+
+000000e8 <__vector_3>:
+
+ISR(INT2_vect)
+{
+  e8:	1f 92       	push	r1
+  ea:	0f 92       	push	r0
+  ec:	0f b6       	in	r0, 0x3f	; 63
+  ee:	0f 92       	push	r0
+  f0:	11 24       	eor	r1, r1
+  f2:	2f 93       	push	r18
+  f4:	8f 93       	push	r24
+  f6:	9f 93       	push	r25
+	PORTD |= (1<<PD7);
+  f8:	82 b3       	in	r24, 0x12	; 18
+  fa:	80 68       	ori	r24, 0x80	; 128
+  fc:	82 bb       	out	0x12, r24	; 18
+  fe:	2f ef       	ldi	r18, 0xFF	; 255
+ 100:	80 e7       	ldi	r24, 0x70	; 112
+ 102:	92 e0       	ldi	r25, 0x02	; 2
+ 104:	21 50       	subi	r18, 0x01	; 1
+ 106:	80 40       	sbci	r24, 0x00	; 0
+ 108:	90 40       	sbci	r25, 0x00	; 0
+ 10a:	e1 f7       	brne	.-8      	; 0x104 <__vector_3+0x1c>
+ 10c:	00 c0       	rjmp	.+0      	; 0x10e <__vector_3+0x26>
+ 10e:	00 00       	nop
+	_delay_ms(100);
+	PORTD &= ~(1<<PD7);
+ 110:	82 b3       	in	r24, 0x12	; 18
+ 112:	8f 77       	andi	r24, 0x7F	; 127
+ 114:	82 bb       	out	0x12, r24	; 18
+ 116:	9f 91       	pop	r25
+ 118:	8f 91       	pop	r24
+ 11a:	2f 91       	pop	r18
+ 11c:	0f 90       	pop	r0
+ 11e:	0f be       	out	0x3f, r0	; 63
+ 120:	0f 90       	pop	r0
+ 122:	1f 90       	pop	r1
+ 124:	18 95       	reti
