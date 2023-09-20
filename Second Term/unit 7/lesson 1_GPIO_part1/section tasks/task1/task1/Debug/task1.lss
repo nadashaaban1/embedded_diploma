@@ -1,0 +1,281 @@
+
+task1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000188  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000001dc  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  000001dc  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000020c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  00000248  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000005b6  00000000  00000000  00000278  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000540  00000000  00000000  0000082e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000225  00000000  00000000  00000d6e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000074  00000000  00000000  00000f94  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000002cb  00000000  00000000  00001008  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000cb  00000000  00000000  000012d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  0000139e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 72 00 	call	0xe4	; 0xe4 <main>
+  64:	0c 94 c2 00 	jmp	0x184	; 0x184 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <GPIO_init>:
+
+#define set_bit(reg, bit) reg |= (1<<bit)
+#define reset_bit(reg, bit) reg &= ~(1<<bit)
+
+void GPIO_init()
+{
+  6c:	cf 93       	push	r28
+  6e:	df 93       	push	r29
+  70:	cd b7       	in	r28, 0x3d	; 61
+  72:	de b7       	in	r29, 0x3e	; 62
+	DDRA=0b11111111;
+  74:	8a e3       	ldi	r24, 0x3A	; 58
+  76:	90 e0       	ldi	r25, 0x00	; 0
+  78:	2f ef       	ldi	r18, 0xFF	; 255
+  7a:	fc 01       	movw	r30, r24
+  7c:	20 83       	st	Z, r18
+
+}
+  7e:	00 00       	nop
+  80:	df 91       	pop	r29
+  82:	cf 91       	pop	r28
+  84:	08 95       	ret
+
+00000086 <my_delay>:
+
+void my_delay(int x)
+{
+  86:	cf 93       	push	r28
+  88:	df 93       	push	r29
+  8a:	00 d0       	rcall	.+0      	; 0x8c <my_delay+0x6>
+  8c:	00 d0       	rcall	.+0      	; 0x8e <my_delay+0x8>
+  8e:	00 d0       	rcall	.+0      	; 0x90 <my_delay+0xa>
+  90:	cd b7       	in	r28, 0x3d	; 61
+  92:	de b7       	in	r29, 0x3e	; 62
+  94:	9e 83       	std	Y+6, r25	; 0x06
+  96:	8d 83       	std	Y+5, r24	; 0x05
+	int i,j;
+	for (i = 0; i < x; i++)
+  98:	1a 82       	std	Y+2, r1	; 0x02
+  9a:	19 82       	std	Y+1, r1	; 0x01
+  9c:	12 c0       	rjmp	.+36     	; 0xc2 <my_delay+0x3c>
+	{
+		for(j = 0; j < 1000; j++);
+  9e:	1c 82       	std	Y+4, r1	; 0x04
+  a0:	1b 82       	std	Y+3, r1	; 0x03
+  a2:	05 c0       	rjmp	.+10     	; 0xae <my_delay+0x28>
+  a4:	8b 81       	ldd	r24, Y+3	; 0x03
+  a6:	9c 81       	ldd	r25, Y+4	; 0x04
+  a8:	01 96       	adiw	r24, 0x01	; 1
+  aa:	9c 83       	std	Y+4, r25	; 0x04
+  ac:	8b 83       	std	Y+3, r24	; 0x03
+  ae:	8b 81       	ldd	r24, Y+3	; 0x03
+  b0:	9c 81       	ldd	r25, Y+4	; 0x04
+  b2:	88 3e       	cpi	r24, 0xE8	; 232
+  b4:	93 40       	sbci	r25, 0x03	; 3
+  b6:	b4 f3       	brlt	.-20     	; 0xa4 <my_delay+0x1e>
+}
+
+void my_delay(int x)
+{
+	int i,j;
+	for (i = 0; i < x; i++)
+  b8:	89 81       	ldd	r24, Y+1	; 0x01
+  ba:	9a 81       	ldd	r25, Y+2	; 0x02
+  bc:	01 96       	adiw	r24, 0x01	; 1
+  be:	9a 83       	std	Y+2, r25	; 0x02
+  c0:	89 83       	std	Y+1, r24	; 0x01
+  c2:	29 81       	ldd	r18, Y+1	; 0x01
+  c4:	3a 81       	ldd	r19, Y+2	; 0x02
+  c6:	8d 81       	ldd	r24, Y+5	; 0x05
+  c8:	9e 81       	ldd	r25, Y+6	; 0x06
+  ca:	28 17       	cp	r18, r24
+  cc:	39 07       	cpc	r19, r25
+  ce:	3c f3       	brlt	.-50     	; 0x9e <my_delay+0x18>
+	{
+		for(j = 0; j < 1000; j++);
+	}
+	
+}
+  d0:	00 00       	nop
+  d2:	26 96       	adiw	r28, 0x06	; 6
+  d4:	0f b6       	in	r0, 0x3f	; 63
+  d6:	f8 94       	cli
+  d8:	de bf       	out	0x3e, r29	; 62
+  da:	0f be       	out	0x3f, r0	; 63
+  dc:	cd bf       	out	0x3d, r28	; 61
+  de:	df 91       	pop	r29
+  e0:	cf 91       	pop	r28
+  e2:	08 95       	ret
+
+000000e4 <main>:
+
+int main(void)
+{
+  e4:	cf 93       	push	r28
+  e6:	df 93       	push	r29
+  e8:	00 d0       	rcall	.+0      	; 0xea <main+0x6>
+  ea:	00 d0       	rcall	.+0      	; 0xec <main+0x8>
+  ec:	cd b7       	in	r28, 0x3d	; 61
+  ee:	de b7       	in	r29, 0x3e	; 62
+	GPIO_init();
+  f0:	0e 94 36 00 	call	0x6c	; 0x6c <GPIO_init>
+	
+	while(1)
+	{
+		for(int i=7;i>=0;i--)
+  f4:	87 e0       	ldi	r24, 0x07	; 7
+  f6:	90 e0       	ldi	r25, 0x00	; 0
+  f8:	9a 83       	std	Y+2, r25	; 0x02
+  fa:	89 83       	std	Y+1, r24	; 0x01
+  fc:	1b c0       	rjmp	.+54     	; 0x134 <main+0x50>
+		{
+			set_bit(PORTA,i);
+  fe:	8b e3       	ldi	r24, 0x3B	; 59
+ 100:	90 e0       	ldi	r25, 0x00	; 0
+ 102:	2b e3       	ldi	r18, 0x3B	; 59
+ 104:	30 e0       	ldi	r19, 0x00	; 0
+ 106:	f9 01       	movw	r30, r18
+ 108:	20 81       	ld	r18, Z
+ 10a:	42 2f       	mov	r20, r18
+ 10c:	21 e0       	ldi	r18, 0x01	; 1
+ 10e:	30 e0       	ldi	r19, 0x00	; 0
+ 110:	09 80       	ldd	r0, Y+1	; 0x01
+ 112:	02 c0       	rjmp	.+4      	; 0x118 <main+0x34>
+ 114:	22 0f       	add	r18, r18
+ 116:	33 1f       	adc	r19, r19
+ 118:	0a 94       	dec	r0
+ 11a:	e2 f7       	brpl	.-8      	; 0x114 <main+0x30>
+ 11c:	24 2b       	or	r18, r20
+ 11e:	fc 01       	movw	r30, r24
+ 120:	20 83       	st	Z, r18
+			my_delay(20);
+ 122:	84 e1       	ldi	r24, 0x14	; 20
+ 124:	90 e0       	ldi	r25, 0x00	; 0
+ 126:	0e 94 43 00 	call	0x86	; 0x86 <my_delay>
+{
+	GPIO_init();
+	
+	while(1)
+	{
+		for(int i=7;i>=0;i--)
+ 12a:	89 81       	ldd	r24, Y+1	; 0x01
+ 12c:	9a 81       	ldd	r25, Y+2	; 0x02
+ 12e:	01 97       	sbiw	r24, 0x01	; 1
+ 130:	9a 83       	std	Y+2, r25	; 0x02
+ 132:	89 83       	std	Y+1, r24	; 0x01
+ 134:	89 81       	ldd	r24, Y+1	; 0x01
+ 136:	9a 81       	ldd	r25, Y+2	; 0x02
+ 138:	99 23       	and	r25, r25
+ 13a:	0c f7       	brge	.-62     	; 0xfe <main+0x1a>
+		{
+			set_bit(PORTA,i);
+			my_delay(20);
+			
+		}
+		for(int i=0;i<8;i++)
+ 13c:	1c 82       	std	Y+4, r1	; 0x04
+ 13e:	1b 82       	std	Y+3, r1	; 0x03
+ 140:	1c c0       	rjmp	.+56     	; 0x17a <main+0x96>
+		{
+			reset_bit(PORTA,i);
+ 142:	8b e3       	ldi	r24, 0x3B	; 59
+ 144:	90 e0       	ldi	r25, 0x00	; 0
+ 146:	2b e3       	ldi	r18, 0x3B	; 59
+ 148:	30 e0       	ldi	r19, 0x00	; 0
+ 14a:	f9 01       	movw	r30, r18
+ 14c:	20 81       	ld	r18, Z
+ 14e:	42 2f       	mov	r20, r18
+ 150:	21 e0       	ldi	r18, 0x01	; 1
+ 152:	30 e0       	ldi	r19, 0x00	; 0
+ 154:	0b 80       	ldd	r0, Y+3	; 0x03
+ 156:	02 c0       	rjmp	.+4      	; 0x15c <main+0x78>
+ 158:	22 0f       	add	r18, r18
+ 15a:	33 1f       	adc	r19, r19
+ 15c:	0a 94       	dec	r0
+ 15e:	e2 f7       	brpl	.-8      	; 0x158 <main+0x74>
+ 160:	20 95       	com	r18
+ 162:	24 23       	and	r18, r20
+ 164:	fc 01       	movw	r30, r24
+ 166:	20 83       	st	Z, r18
+			my_delay(20);
+ 168:	84 e1       	ldi	r24, 0x14	; 20
+ 16a:	90 e0       	ldi	r25, 0x00	; 0
+ 16c:	0e 94 43 00 	call	0x86	; 0x86 <my_delay>
+		{
+			set_bit(PORTA,i);
+			my_delay(20);
+			
+		}
+		for(int i=0;i<8;i++)
+ 170:	8b 81       	ldd	r24, Y+3	; 0x03
+ 172:	9c 81       	ldd	r25, Y+4	; 0x04
+ 174:	01 96       	adiw	r24, 0x01	; 1
+ 176:	9c 83       	std	Y+4, r25	; 0x04
+ 178:	8b 83       	std	Y+3, r24	; 0x03
+ 17a:	8b 81       	ldd	r24, Y+3	; 0x03
+ 17c:	9c 81       	ldd	r25, Y+4	; 0x04
+ 17e:	08 97       	sbiw	r24, 0x08	; 8
+ 180:	04 f3       	brlt	.-64     	; 0x142 <main+0x5e>
+			reset_bit(PORTA,i);
+			my_delay(20);
+					
+		}
+
+	}
+ 182:	b8 cf       	rjmp	.-144    	; 0xf4 <main+0x10>
+
+00000184 <_exit>:
+ 184:	f8 94       	cli
+
+00000186 <__stop_program>:
+ 186:	ff cf       	rjmp	.-2      	; 0x186 <__stop_program>
