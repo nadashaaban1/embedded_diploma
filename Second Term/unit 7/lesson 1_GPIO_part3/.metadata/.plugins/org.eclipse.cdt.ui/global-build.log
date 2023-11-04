@@ -1,0 +1,2389 @@
+19:28:37 **** Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+20:05:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+16:57:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+16:58:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+20:34:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from ../Src/main.c:25:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:35:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from ../Src/main.c:25:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:36:52 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from ../Src/main.c:25:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: missing terminating " character
+ #include "STM32F103x6.h""
+                         ^
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:25: warning: extra tokens at end of #include directive
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:37:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:37:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:37:25 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:37:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../Src/main.c:24:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+In file included from D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:13:0,
+                 from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:115:2: error: conflicting types for 'EXTI_Typedef'
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:101:2: note: previous declaration of 'EXTI_Typedef' was here
+ }EXTI_Typedef;
+  ^~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:38:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+20:38:40 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+21:20:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_Init':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:21:21: warning: unused variable 'configRegister' [-Wunused-variable]
+  volatile uint32_t* configRegister= NULL;
+                     ^~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:55:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+21:41:06 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:14:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_0;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:17:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_1;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:20:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_2;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:23:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_3;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:26:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_4;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:29:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_5;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:32:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_6;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:35:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_7;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_8;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:17: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_9;
+                 ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_10;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_11;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_12;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_13;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_14;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:18: error: expected ':' or '...' before ';' token
+  case GPIO_PIN_15;
+                  ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_Init':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:76:21: warning: variable 'configRegister' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* configRegister= NULL;
+                     ^~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:15:9: warning: statement will never be executed [-Wswitch-unreachable]
+  return 0;
+         ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:183:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:42:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_Init':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:76:21: warning: variable 'configRegister' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* configRegister= NULL;
+                     ^~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:183:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+21:44:38 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:124:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:184:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+21:59:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:203:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+22:09:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:220:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+22:20:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_DeInit':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:167:20: error: 'GPIOF' undeclared (first use in this function); did you mean 'GPIOx'?
+  else if (GPIOx == GPIOF)
+                    ^~~~~
+                    GPIOx
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:167:20: note: each undeclared identifier is reported only once for each function it appears in
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:191:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:204:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:264:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:20:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:186:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:199:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:259:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+22:25:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_ReadPort':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:203:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:263:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+22:30:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+22:32:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+22:41:05 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+22:59:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+../Src/main.c: In function 'clock_init':
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:138:39: error: 'RCC_Typedef {aka struct <anonymous>}' has no member named 'APB2ENR'; did you mean 'APB2RSTR'?
+ #define RCC_GPIOA_CLK_EN()      (RCC->APB2ENR |= 1<<2)
+                                       ^
+../Src/main.c:26:2: note: in expansion of macro 'RCC_GPIOA_CLK_EN'
+  RCC_GPIOA_CLK_EN();
+  ^~~~~~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:139:39: error: 'RCC_Typedef {aka struct <anonymous>}' has no member named 'APB2ENR'; did you mean 'APB2RSTR'?
+ #define RCC_GPIOB_CLK_EN()      (RCC->APB2ENR |= 1<<3)
+                                       ^
+../Src/main.c:28:2: note: in expansion of macro 'RCC_GPIOB_CLK_EN'
+  RCC_GPIOB_CLK_EN()
+  ^~~~~~~~~~~~~~~~
+../Src/main.c:29:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:00:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+../Src/main.c: In function 'clock_init':
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:138:39: error: 'RCC_Typedef {aka struct <anonymous>}' has no member named 'APB2ENR'; did you mean 'APB2RSTR'?
+ #define RCC_GPIOA_CLK_EN()      (RCC->APB2ENR |= 1<<2)
+                                       ^
+../Src/main.c:26:2: note: in expansion of macro 'RCC_GPIOA_CLK_EN'
+  RCC_GPIOA_CLK_EN();
+  ^~~~~~~~~~~~~~~~
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32F103x6.h:139:39: error: 'RCC_Typedef {aka struct <anonymous>}' has no member named 'APB2ENR'; did you mean 'APB2RSTR'?
+ #define RCC_GPIOB_CLK_EN()      (RCC->APB2ENR |= 1<<3)
+                                       ^
+../Src/main.c:28:2: note: in expansion of macro 'RCC_GPIOB_CLK_EN'
+  RCC_GPIOB_CLK_EN();
+  ^~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:06:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+23:06:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+23:13:14 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+ 
+23:14:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+23:15:40 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:17:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:19:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:20:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:23:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:37:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:115:10: fatal error: STM32_F103C6.h: No such file or directory
+ #include "STM32_F103C6.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:37:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:133:2: error: unknown type name 'GPIO_PINConfig_t'; did you mean 'GPIO_PinConfig_t'?
+  GPIO_PINConfig_t PinCfg ;
+  ^~~~~~~~~~~~~~~~
+  GPIO_PinConfig_t
+../Src/main.c:136:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_1;
+        ^
+../Src/main.c:137:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:138:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+                        ^
+In file included from ../Src/main.c:116:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:143:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_1;
+        ^
+../Src/main.c:144:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:145:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c:146:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+                        ^
+In file included from ../Src/main.c:116:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:150:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_13;
+        ^
+../Src/main.c:151:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:152:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+                        ^
+In file included from ../Src/main.c:116:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:156:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_13;
+        ^
+../Src/main.c:157:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:158:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c:159:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+                        ^
+In file included from ../Src/main.c:116:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:39:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:47:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:103:2: error: unknown type name 'GPIO_PINConfig_t'; did you mean 'GPIO_PinConfig_t'?
+  GPIO_PINConfig_t PinCfg ;
+  ^~~~~~~~~~~~~~~~
+  GPIO_PinConfig_t
+../Src/main.c:106:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_1;
+        ^
+../Src/main.c:107:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:108:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+                        ^
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:113:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_1;
+        ^
+../Src/main.c:114:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:115:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c:116:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+                        ^
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:120:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_13;
+        ^
+../Src/main.c:121:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_INPUT_FLO;
+        ^
+../Src/main.c:122:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOA, &PinCfg);
+                        ^
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:126:8: error: request for member 'GPIO_PinNumber' in something not a structure or union
+  PinCfg.GPIO_PinNumber =GPIO_PIN_13;
+        ^
+../Src/main.c:127:8: error: request for member 'GPIO_MODE' in something not a structure or union
+  PinCfg.GPIO_MODE =GPIO_MODE_OUTPUT_PP;
+        ^
+../Src/main.c:128:8: error: request for member 'GPIO_OUTPUT_SPEED' in something not a structure or union
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c:129:24: warning: passing argument 2 of 'MCAL_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_GPIO_Init(GPIOB, &PinCfg);
+                        ^
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:88:6: note: expected 'GPIO_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'int *'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:142:2: warning: implicit declaration of function 'clock_init'; did you mean 'Clock_init'? [-Wimplicit-function-declaration]
+  clock_init();
+  ^~~~~~~~~~
+  Clock_init
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:48:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:115:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_OUTPUT_SPEED'
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c:128:8: error: 'GPIO_PinConfig_t {aka struct <anonymous>}' has no member named 'GPIO_OUTPUT_SPEED'
+  PinCfg.GPIO_OUTPUT_SPEED =GPIO_SPEED_10M;
+        ^
+../Src/main.c: In function 'main':
+../Src/main.c:142:2: warning: implicit declaration of function 'clock_init'; did you mean 'Clock_init'? [-Wimplicit-function-declaration]
+  clock_init();
+  ^~~~~~~~~~
+  Clock_init
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:48:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:142:2: warning: implicit declaration of function 'clock_init'; did you mean 'Clock_init'? [-Wimplicit-function-declaration]
+  clock_init();
+  ^~~~~~~~~~
+  Clock_init
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/Debug/../Src/main.c:142: undefined reference to `clock_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:53: Drivers.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:49:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1284	      8	   1568	   2860	    b2c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+ 
+23:50:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:51:32 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:65:1: warning: "/*" within comment [-Wcomment]
+ /**================================================================
+  
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:74:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig)
+ ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:389:41: error: unknown type name 'GPIO_PINConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_GPIO_Init(GPIO_Typedef *GPIOx,GPIO_PINConfig_t* PinConfig)
+                                         ^~~~~~~~~~~~~~~~
+                                         GPIO_PinConfig_t
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:454:6: error: redefinition of 'MCAL_GPIO_DeInit'
+ void MCAL_GPIO_DeInit(GPIO_Typedef *GPIOx)
+      ^~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:130:6: note: previous definition of 'MCAL_GPIO_DeInit' was here
+ void MCAL_GPIO_DeInit(GPIO_Typedef* GPIOx)
+      ^~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:498:9: error: redefinition of 'MCAL_GPIO_ReadPin'
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef *GPIOx,uint16_t PinNumber)
+         ^~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:178:9: note: previous definition of 'MCAL_GPIO_ReadPin' was here
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef* GPIOx, uint16_t PinNumber)
+         ^~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:521:10: error: redefinition of 'MCAL_GPIO_ReadPort'
+ uint16_t MCAL_GPIO_ReadPort(GPIO_Typedef *GPIOx)
+          ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:200:10: note: previous definition of 'MCAL_GPIO_ReadPort' was here
+ uint16_t MCAL_GPIO_ReadPort(GPIO_Typedef* GPIOx)
+          ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:535:6: error: redefinition of 'MCAL_GPIO_WritePin'
+ void MCAL_GPIO_WritePin(GPIO_Typedef *GPIOx,uint16_t PinNumber,uint8_t Value)
+      ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:218:6: note: previous definition of 'MCAL_GPIO_WritePin' was here
+ void MCAL_GPIO_WritePin(GPIO_Typedef* GPIOx, uint16_t PinNumber, uint8_t value)
+      ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:571:6: error: redefinition of 'MCAL_GPIO_WritePort'
+ void MCAL_GPIO_WritePort(GPIO_Typedef *GPIOx,uint16_t Value)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:242:6: note: previous definition of 'MCAL_GPIO_WritePort' was here
+ void MCAL_GPIO_WritePort(GPIO_Typedef* GPIOx, uint16_t value)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:585:6: error: redefinition of 'MCAL_GPIO_TogglePin'
+ void MCAL_GPIO_TogglePin(GPIO_Typedef *GPIOx,uint16_t PinNumber)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:257:6: note: previous definition of 'MCAL_GPIO_TogglePin' was here
+ void MCAL_GPIO_TogglePin(GPIO_Typedef* GPIOx, uint16_t PinNumber)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:647:11: error: 'GPIO_RETURN_LOCK_ENABLE' undeclared (first use in this function); did you mean 'GPIO_RETURN_LOCK_Error'?
+    return GPIO_RETURN_LOCK_ENABLE;
+           ^~~~~~~~~~~~~~~~~~~~~~~
+           GPIO_RETURN_LOCK_Error
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:647:11: note: each undeclared identifier is reported only once for each function it appears in
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:651:11: error: 'GPIO_RETURN_LOCK_ERROR' undeclared (first use in this function); did you mean 'GPIO_RETURN_LOCK_Error'?
+    return GPIO_RETURN_LOCK_ERROR;
+           ^~~~~~~~~~~~~~~~~~~~~~
+           GPIO_RETURN_LOCK_Error
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:653:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:52:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+In file included from ../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:8:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:80:1: warning: "/*" within comment [-Wcomment]
+ /*@ref Module_REF_NAME_define
+  
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:114:10: fatal error: STM32_F103C6.h: No such file or directory
+ #include "STM32_F103C6.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:80:1: warning: "/*" within comment [-Wcomment]
+ /*@ref Module_REF_NAME_define
+  
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:114:10: fatal error: STM32_F103C6.h: No such file or directory
+ #include "STM32_F103C6.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:52:46 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:65:1: warning: "/*" within comment [-Wcomment]
+ /**================================================================
+  
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:74:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void MCAL_GPIO_Init(GPIO_Typedef* GPIOx, GPIO_PinConfig_t* PinConfig)
+ ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:389:41: error: unknown type name 'GPIO_PINConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_GPIO_Init(GPIO_Typedef *GPIOx,GPIO_PINConfig_t* PinConfig)
+                                         ^~~~~~~~~~~~~~~~
+                                         GPIO_PinConfig_t
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:454:6: error: redefinition of 'MCAL_GPIO_DeInit'
+ void MCAL_GPIO_DeInit(GPIO_Typedef *GPIOx)
+      ^~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:130:6: note: previous definition of 'MCAL_GPIO_DeInit' was here
+ void MCAL_GPIO_DeInit(GPIO_Typedef* GPIOx)
+      ^~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:498:9: error: redefinition of 'MCAL_GPIO_ReadPin'
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef *GPIOx,uint16_t PinNumber)
+         ^~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:178:9: note: previous definition of 'MCAL_GPIO_ReadPin' was here
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef* GPIOx, uint16_t PinNumber)
+         ^~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:521:10: error: redefinition of 'MCAL_GPIO_ReadPort'
+ uint16_t MCAL_GPIO_ReadPort(GPIO_Typedef *GPIOx)
+          ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:200:10: note: previous definition of 'MCAL_GPIO_ReadPort' was here
+ uint16_t MCAL_GPIO_ReadPort(GPIO_Typedef* GPIOx)
+          ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:535:6: error: redefinition of 'MCAL_GPIO_WritePin'
+ void MCAL_GPIO_WritePin(GPIO_Typedef *GPIOx,uint16_t PinNumber,uint8_t Value)
+      ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:218:6: note: previous definition of 'MCAL_GPIO_WritePin' was here
+ void MCAL_GPIO_WritePin(GPIO_Typedef* GPIOx, uint16_t PinNumber, uint8_t value)
+      ^~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:571:6: error: redefinition of 'MCAL_GPIO_WritePort'
+ void MCAL_GPIO_WritePort(GPIO_Typedef *GPIOx,uint16_t Value)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:242:6: note: previous definition of 'MCAL_GPIO_WritePort' was here
+ void MCAL_GPIO_WritePort(GPIO_Typedef* GPIOx, uint16_t value)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:585:6: error: redefinition of 'MCAL_GPIO_TogglePin'
+ void MCAL_GPIO_TogglePin(GPIO_Typedef *GPIOx,uint16_t PinNumber)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:257:6: note: previous definition of 'MCAL_GPIO_TogglePin' was here
+ void MCAL_GPIO_TogglePin(GPIO_Typedef* GPIOx, uint16_t PinNumber)
+      ^~~~~~~~~~~~~~~~~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'MCAL_GPIO_LockPin':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:647:11: error: 'GPIO_RETURN_LOCK_ENABLE' undeclared (first use in this function); did you mean 'GPIO_RETURN_LOCK_Error'?
+    return GPIO_RETURN_LOCK_ENABLE;
+           ^~~~~~~~~~~~~~~~~~~~~~~
+           GPIO_RETURN_LOCK_Error
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:647:11: note: each undeclared identifier is reported only once for each function it appears in
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:651:11: error: 'GPIO_RETURN_LOCK_ERROR' undeclared (first use in this function); did you mean 'GPIO_RETURN_LOCK_Error'?
+    return GPIO_RETURN_LOCK_ERROR;
+           ^~~~~~~~~~~~~~~~~~~~~~
+           GPIO_RETURN_LOCK_Error
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:653:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:53:00 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:53:05 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+23:53:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+23:53:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+23:56:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:58:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+Finished building: Drivers.hex
+ 
+ 
+ 
+23:59:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+23:59:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:01:46 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+00:01:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:12:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+00:12:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:12:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1272	      8	   1568	   2848	    b20	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:25:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+00:26:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:29:07 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:69:2: error: too few arguments to function 'MCAL_GPIO_WritePin'
+  MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_13);
+  ^~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:21:0:
+D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc/STM32_F103_C6_GPIO.h:94:6: note: declared here
+ void MCAL_GPIO_WritePin(GPIO_Typedef* GPIOx, uint16_t PinNumber, uint8_t value);
+      ^~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:29:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1328	      8	   1568	   2904	    b58	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+00:31:05 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1328	      8	   1568	   2904	    b58	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+00:32:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:24:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+01:26:07 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1264	      8	   1568	   2840	    b18	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:26:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1264	      8	   1568	   2840	    b18	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:27:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1264	      8	   1568	   2840	    b18	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:28:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:29:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:38:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:41:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:44:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:47:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:50:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:53:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:56:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:59:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:31:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:37:1: error: stray '`' in program
+ `  break;
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:39:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:42:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:45:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:48:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:51:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:54:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:57:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:60:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:32:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:37:1: error: stray '`' in program
+ `  break;
+ ^
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:39:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:42:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:45:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:48:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:51:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:54:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:57:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:60:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+make: *** [STM32_F103_C6_drivers/subdir.mk:18: STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:32:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:39:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:42:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:45:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:48:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:51:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:54:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:57:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:60:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+01:32:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+01:33:49 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c: In function 'Get_CRLH_Position':
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:39:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_8:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:42:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_9:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:45:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_10:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:48:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_11:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:51:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_12:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:54:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_13:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:57:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_14:
+  ^~~~
+../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c:60:2: warning: case label value exceeds maximum value for type
+  case GPIO_PIN_15:
+  ^~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:37:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103_C6_drivers/STM32_F103_C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/nada/Embedded Diploma Codes/Second Term/unit 7/lesson 1_GPIO_part3/Drivers/STM32_F103_C6_drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.d" -MT"STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103_C6_drivers/STM32_F103_C6_GPIO.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\nada\Embedded Diploma Codes\Second Term\unit 7\lesson 1_GPIO_part3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1360	      8	   1568	   2936	    b78	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+ 
+01:37:17 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1360	      8	   1568	   2936	    b78	Drivers.elf
+Finished building: default.size.stdout
+ 
